@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## Welcome to the MineCenter help page
 
-You can use the [editor on GitHub](https://github.com/Pass1/MineCenter/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+MineCenter allows you to keep track of your mining rig via the ethermine interface. Once installed, you can add a widget to your home screen and at a glance you will be able to see what is going on.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Setup
 
-### Markdown
+First lets configure the app for your miner
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Launch the app
+2. Paste in you miner
+3. Save
 
-```markdown
-Syntax highlighted code block
+Now let us add the widget to your home screen. Before we do that, we don't want to screw up you nicely layed out icons, so go to an app page wher you have a nice 2x2 space. Now let's add the widget:
 
-# Header 1
-## Header 2
-### Header 3
+1. Hold down on an empty part of the screen until the icons start wiggling
+2. Tap the + icon in the top left to add a widget
+3. Search for MineCenter
+4. Go ahead and add the widget and place it to your liking
+5. Click Done in top right
 
-- Bulleted
-- List
+You are all set now!
 
-1. Numbered
-2. List
+### Known issues
 
-**Bold** and _Italic_ and `Code` text
+The widget provide a "Last update" time. This is affected by 2 things:
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Pass1/MineCenter/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. The Ethermine pool updates the information at predefined intervals (just like when you check on the website the information is not live).
+2. If you have the widget on a page that you rarely visit, iOS will save battery by reducing the update interval. If yuou would liket to force a refresh, you can open the app and hit Save. This invalidates the current information and causes a forced refresh. However, if there is no new data from Ethermine, the "Last update" time will not change, as it is displayed from the received data (i.e. not when the data was requested, but when the data was generted).
